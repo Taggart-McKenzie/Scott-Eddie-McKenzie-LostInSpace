@@ -6,6 +6,9 @@
 package moonjumpers;
 
 import byui.cit260.moomJumpers.model.Player;
+import byui.cit260.moonJumpers.model.Items;
+import byui.cit260.moonJumpers.model.Map;
+import byui.cit260.moonJumpers.model.Questions;
 
 /**
  *
@@ -25,6 +28,32 @@ public class MoonJumpers {
        String playerInfo = playerOne.toString();
        System.out.println(playerInfo);
        
+       Map location = new Map();
+       
+       location.setCurrentLocation("Jupiter");
+       location.setAvailableLocations("Earth");
+       
+       String locationInfo = location.toString();
+       System.out.println(location);
+       
+       Items moonBoots = new Items();
+       
+       moonBoots.setInventoryType("Footwear");
+       moonBoots.setQuantityInStock(1.00);
+       moonBoots.setRequiredAmount(1.00);
+       
+       String moonBootsInfo = moonBoots.toString();
+       System.out.println(moonBoots);
+       
+       Questions quiz = new Questions();
+       
+       quiz.setQuestions("What is the sun?");
+       quiz.setAnswers("A ball of fire");
+       quiz.setCorrectAnswers("Yes");
+       quiz.setEquations(2.00);
+       
+       String quizInfo = quiz.toString();
+       System.out.println(quiz);
     }
     
 }
