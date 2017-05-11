@@ -5,7 +5,7 @@
  */
 package moonjumpers;
 
-import byui.cit260.moomJumpers.model.Player;
+import byui.cit260.moonJumpers.model.Player;
 import byui.cit260.moonJumpers.model.Items;
 import byui.cit260.moonJumpers.model.Map;
 import byui.cit260.moonJumpers.model.Questions;
