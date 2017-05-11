@@ -25,6 +25,8 @@ public class MoonJumpers {
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
         
+        Items moonBoots = new Items();
+        
         
     }
     
