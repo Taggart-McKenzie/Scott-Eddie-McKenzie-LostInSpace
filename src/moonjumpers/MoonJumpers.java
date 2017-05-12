@@ -9,6 +9,8 @@ import byui.cit260.moonJumpers.model.Player;
 import byui.cit260.moonJumpers.model.Items;
 import byui.cit260.moonJumpers.model.Map;
 import byui.cit260.moonJumpers.model.Questions;
+import byui.cit260.moonJumpers.model.Location;
+
 
 /**
  *
@@ -27,7 +29,7 @@ public class MoonJumpers {
        
        String playerInfo = playerOne.toString();
        System.out.println(playerInfo);
-       
+             
        Map location = new Map();
        
        location.setCurrentLocation("Jupiter");
@@ -54,6 +56,17 @@ public class MoonJumpers {
        
        String quizInfo = quiz.toString();
        System.out.println(quiz);
+       
+       Location celestial = new Location();
+       
+       celestial.setCelestialBodies("Saturn");
+       celestial.setNextCelestialBody("Neptune");
+       celestial.setVisited(Boolean.TRUE);
+       celestial.setAmountRemaining(2.00);
+       
+       String celestialInfo = celestial.toString();
+       System.out.println(celestial);
+       
     }
     
 }

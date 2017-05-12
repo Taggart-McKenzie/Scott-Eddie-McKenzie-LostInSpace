@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.moomJumpers.model;
+package byui.cit260.moonJumpers.model;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -19,7 +19,6 @@ public class Player implements Serializable{
     private double bestTime;
 
     public Player() {
-        this.name = name;
     }
 
     @Override
