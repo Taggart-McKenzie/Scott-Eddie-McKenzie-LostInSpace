@@ -10,6 +10,7 @@ import byui.cit260.moonJumpers.model.Items;
 import byui.cit260.moonJumpers.model.Map;
 import byui.cit260.moonJumpers.model.Questions;
 import byui.cit260.moonJumpers.model.Location;
+import byui.cit260.moonJumpers.model.Scene;
 
 
 /**
@@ -67,6 +68,16 @@ public class MoonJumpers {
        String celestialInfo = celestial.toString();
        System.out.println(celestial);
        
+       Scene scene = new Scene();
+       
+       scene.setDescription("You must go to Neptune");
+       scene.setTravelTime("02:00 hours");
+       scene.setPlanetType("Gaseous giants");
+       scene.setFuelAmount(15.00);
+       scene.setDisplaySymbol("Np");
+       
+       String sceneInfo = scene.toString();
+       System.out.println(scene);
     }
     
 }
