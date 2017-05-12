@@ -5,7 +5,13 @@
  */
 package moonjumpers;
 
-import byui.cit260.moomJumpers.model.Player;
+import byui.cit260.moonJumpers.model.Player;
+import byui.cit260.moonJumpers.model.Items;
+import byui.cit260.moonJumpers.model.Map;
+import byui.cit260.moonJumpers.model.Questions;
+import byui.cit260.moonJumpers.model.Location;
+import byui.cit260.moonJumpers.model.Scene;
+
 
 /**
  *
@@ -24,7 +30,54 @@ public class MoonJumpers {
        
        String playerInfo = playerOne.toString();
        System.out.println(playerInfo);
+             
+       Map location = new Map();
        
+       location.setCurrentLocation("Jupiter");
+       location.setAvailableLocations("Earth");
+       
+       String locationInfo = location.toString();
+       System.out.println(location);
+       
+       Items moonBoots = new Items();
+       
+       moonBoots.setInventoryType("Footwear");
+       moonBoots.setQuantityInStock(1.00);
+       moonBoots.setRequiredAmount(1.00);
+       
+       String moonBootsInfo = moonBoots.toString();
+       System.out.println(moonBoots);
+       
+       Questions quiz = new Questions();
+       
+       quiz.setQuestions("What is the sun?");
+       quiz.setAnswers("A ball of fire");
+       quiz.setCorrectAnswers("Yes");
+       quiz.setEquations(2.00);
+       
+       String quizInfo = quiz.toString();
+       System.out.println(quiz);
+       
+       Location celestial = new Location();
+       
+       celestial.setCelestialBodies("Saturn");
+       celestial.setNextCelestialBody("Neptune");
+       celestial.setVisited(Boolean.TRUE);
+       celestial.setAmountRemaining(2.00);
+       
+       String celestialInfo = celestial.toString();
+       System.out.println(celestial);
+       
+       Scene scene = new Scene();
+       
+       scene.setDescription("You must go to Neptune");
+       scene.setTravelTime("02:00 hours");
+       scene.setPlanetType("Gaseous giants");
+       scene.setFuelAmount(15.00);
+       scene.setDisplaySymbol("Np");
+       
+       String sceneInfo = scene.toString();
+       System.out.println(scene);
     }
     
 }
